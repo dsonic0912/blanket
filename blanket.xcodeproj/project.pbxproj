@@ -8,8 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		553B188AD2C0143A5DE42257 /* Pods_blanket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38DB795985F18547C34B3F27 /* Pods_blanket.framework */; };
+		7BB69BFF1E5126DB0026CB72 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB69BFE1E5126DB0026CB72 /* LoginViewController.swift */; };
+		7BB69C011E5126F60026CB72 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB69C001E5126F60026CB72 /* BaseViewController.swift */; };
+		7BB69C031E5135790026CB72 /* LoginNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB69C021E5135790026CB72 /* LoginNavController.swift */; };
+		7BB69C051E5136260026CB72 /* VendorLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB69C041E5136260026CB72 /* VendorLoginViewController.swift */; };
+		7BBD62181E5BDE59001CAF3C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBD62171E5BDE59001CAF3C /* TabBarController.swift */; };
+		7BC295251E5B6C7D00AA5F46 /* ClientLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC295241E5B6C7D00AA5F46 /* ClientLoginViewController.swift */; };
 		7BD32EBC1E51002A00A3AB91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD32EBB1E51002A00A3AB91 /* AppDelegate.swift */; };
-		7BD32EBE1E51002A00A3AB91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD32EBD1E51002A00A3AB91 /* ViewController.swift */; };
 		7BD32EC11E51002A00A3AB91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BD32EBF1E51002A00A3AB91 /* Main.storyboard */; };
 		7BD32EC31E51002A00A3AB91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BD32EC21E51002A00A3AB91 /* Assets.xcassets */; };
 		7BD32EC61E51002A00A3AB91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BD32EC41E51002A00A3AB91 /* LaunchScreen.storyboard */; };
@@ -43,9 +48,14 @@
 		422A78EB113C9D3A0FE97884 /* Pods-blanketUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blanketUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-blanketUITests/Pods-blanketUITests.release.xcconfig"; sourceTree = "<group>"; };
 		56A43EBA072C91A887F9BD98 /* Pods_blanketTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_blanketTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DA81743A0C205749CE87BE8 /* Pods_blanketUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_blanketUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BB69BFE1E5126DB0026CB72 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7BB69C001E5126F60026CB72 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		7BB69C021E5135790026CB72 /* LoginNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginNavController.swift; sourceTree = "<group>"; };
+		7BB69C041E5136260026CB72 /* VendorLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VendorLoginViewController.swift; sourceTree = "<group>"; };
+		7BBD62171E5BDE59001CAF3C /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		7BC295241E5B6C7D00AA5F46 /* ClientLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientLoginViewController.swift; sourceTree = "<group>"; };
 		7BD32EB81E51002A00A3AB91 /* blanket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = blanket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BD32EBB1E51002A00A3AB91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7BD32EBD1E51002A00A3AB91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7BD32EC01E51002A00A3AB91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7BD32EC21E51002A00A3AB91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BD32EC51E51002A00A3AB91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -112,6 +122,66 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7BB69BF51E5122910026CB72 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		7BB69BF61E51229E0026CB72 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				7BB69BFB1E5124930026CB72 /* Extensions */,
+				7BB69BFA1E51248C0026CB72 /* Common */,
+				7BB69BF91E51245B0026CB72 /* Login */,
+				7BB69BF81E5122CA0026CB72 /* Main */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		7BB69BF71E5122AA0026CB72 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		7BB69BF81E5122CA0026CB72 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7BD32EBB1E51002A00A3AB91 /* AppDelegate.swift */,
+				7BB69C001E5126F60026CB72 /* BaseViewController.swift */,
+				7BBD62171E5BDE59001CAF3C /* TabBarController.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		7BB69BF91E51245B0026CB72 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7BB69BFE1E5126DB0026CB72 /* LoginViewController.swift */,
+				7BB69C021E5135790026CB72 /* LoginNavController.swift */,
+				7BB69C041E5136260026CB72 /* VendorLoginViewController.swift */,
+				7BC295241E5B6C7D00AA5F46 /* ClientLoginViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		7BB69BFA1E51248C0026CB72 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		7BB69BFB1E5124930026CB72 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		7BD32EAF1E51002900A3AB91 = {
 			isa = PBXGroup;
 			children = (
@@ -137,8 +207,9 @@
 		7BD32EBA1E51002A00A3AB91 /* blanket */ = {
 			isa = PBXGroup;
 			children = (
-				7BD32EBB1E51002A00A3AB91 /* AppDelegate.swift */,
-				7BD32EBD1E51002A00A3AB91 /* ViewController.swift */,
+				7BB69BF71E5122AA0026CB72 /* Assets */,
+				7BB69BF61E51229E0026CB72 /* Application */,
+				7BB69BF51E5122910026CB72 /* Models */,
 				7BD32EBF1E51002A00A3AB91 /* Main.storyboard */,
 				7BD32EC21E51002A00A3AB91 /* Assets.xcassets */,
 				7BD32EC41E51002A00A3AB91 /* LaunchScreen.storyboard */,
@@ -449,7 +520,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BD32EBE1E51002A00A3AB91 /* ViewController.swift in Sources */,
+				7BB69C051E5136260026CB72 /* VendorLoginViewController.swift in Sources */,
+				7BC295251E5B6C7D00AA5F46 /* ClientLoginViewController.swift in Sources */,
+				7BB69BFF1E5126DB0026CB72 /* LoginViewController.swift in Sources */,
+				7BB69C031E5135790026CB72 /* LoginNavController.swift in Sources */,
+				7BBD62181E5BDE59001CAF3C /* TabBarController.swift in Sources */,
+				7BB69C011E5126F60026CB72 /* BaseViewController.swift in Sources */,
 				7BD32EBC1E51002A00A3AB91 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -709,6 +785,7 @@
 				7BD32EE21E51002A00A3AB91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7BD32EE31E51002A00A3AB91 /* Build configuration list for PBXNativeTarget "blanketTests" */ = {
 			isa = XCConfigurationList;
@@ -717,6 +794,7 @@
 				7BD32EE51E51002A00A3AB91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7BD32EE61E51002A00A3AB91 /* Build configuration list for PBXNativeTarget "blanketUITests" */ = {
 			isa = XCConfigurationList;
@@ -725,6 +803,7 @@
 				7BD32EE81E51002A00A3AB91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

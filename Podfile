@@ -8,7 +8,9 @@ target 'blanket' do
 
   # Pods for blanket
   pod 'Starscream', '~> 2.0.3'
-
+  pod 'Just'
+  pod 'KeychainSwift', '~> 7.0'
+  
   target 'blanketTests' do
     inherit! :search_paths
     # Pods for testing
