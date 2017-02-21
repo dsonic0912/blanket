@@ -68,7 +68,6 @@ class BaseViewController: UIViewController, VendorLoginDelegate {
         tabBarVC.view.frame = view.frame
         addChildViewController(tabBarVC)
         view.insertSubview(tabBarVC.view, at: 0)
-        
         tabBarVC.didMove(toParentViewController: self)
     }
     

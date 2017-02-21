@@ -37,11 +37,18 @@ class VendorLoginViewController: UIViewController {
         
         if authResponse.ok {
             let responseData = authResponse.json as! NSDictionary
-
-            let keyData = NSKeyedArchiver.archivedData(withRootObject: responseData) as Data
-            let keychain = KeychainSwift()
             
-            keychain.set(keyData, forKey: "auth")
+            let sharedUser = SharedUser.sharedUser
+            
+            sharedUser.username = username
+            sharedUser.password = password
+            sharedUser.company = responseData.value(forKey: "company") as! String
+            sharedUser.firstName = responseData.value(forKey: "first_name") as! String
+            sharedUser.lastName = responseData.value(forKey: "last_name") as! String
+            sharedUser.profileImage = responseData.value(forKey: "image") as! String
+            sharedUser.jwtToken = responseData.value(forKey: "token") as! String
+            
+            sharedUser.syncAuthData()
             
             vendorLoginDelegate.vendorDidLogin()
         } else {
