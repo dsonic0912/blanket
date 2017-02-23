@@ -10,6 +10,9 @@ target 'blanket' do
   pod 'Starscream', '~> 2.0.3'
   pod 'Just'
   pod 'KeychainSwift', '~> 7.0'
+  pod 'SlackTextViewController'
+  pod 'LoremIpsum', '~> 1.0'
+  pod 'HanekeSwift'
   
   target 'blanketTests' do
     inherit! :search_paths

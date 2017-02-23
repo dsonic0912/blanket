@@ -199,10 +199,10 @@
             </objects>
             <point key="canvasLocation" x="876" y="-765"/>
         </scene>
-        <!--Messenger-->
+        <!--Chat-->
         <scene sceneID="fcK-n8-bgp">
             <objects>
-                <viewController id="VfU-em-W2B" sceneMemberID="viewController">
+                <viewController title="Chat" id="VfU-em-W2B" customClass="ChatViewController" customModule="blanket" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cFg-4S-fxA"/>
                         <viewControllerLayoutGuide type="bottom" id="akp-0i-imm"/>

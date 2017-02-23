@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		553B188AD2C0143A5DE42257 /* Pods_blanket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38DB795985F18547C34B3F27 /* Pods_blanket.framework */; };
+		7B26013E1E5D5B1F002818F4 /* MessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B26013D1E5D5B1F002818F4 /* MessageTableViewCell.m */; };
 		7BB69BFF1E5126DB0026CB72 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB69BFE1E5126DB0026CB72 /* LoginViewController.swift */; };
 		7BB69C011E5126F60026CB72 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB69C001E5126F60026CB72 /* BaseViewController.swift */; };
 		7BB69C031E5135790026CB72 /* LoginNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB69C021E5135790026CB72 /* LoginNavController.swift */; };
@@ -15,6 +16,7 @@
 		7BBD62181E5BDE59001CAF3C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBD62171E5BDE59001CAF3C /* TabBarController.swift */; };
 		7BC295251E5B6C7D00AA5F46 /* ClientLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC295241E5B6C7D00AA5F46 /* ClientLoginViewController.swift */; };
 		7BCC736B1E5BFF9600AC16B9 /* SharedUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCC736A1E5BFF9600AC16B9 /* SharedUser.swift */; };
+		7BCC736F1E5C156F00AC16B9 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCC736E1E5C156F00AC16B9 /* ChatViewController.swift */; };
 		7BD32EBC1E51002A00A3AB91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD32EBB1E51002A00A3AB91 /* AppDelegate.swift */; };
 		7BD32EC11E51002A00A3AB91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BD32EBF1E51002A00A3AB91 /* Main.storyboard */; };
 		7BD32EC31E51002A00A3AB91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BD32EC21E51002A00A3AB91 /* Assets.xcassets */; };
@@ -49,6 +51,9 @@
 		422A78EB113C9D3A0FE97884 /* Pods-blanketUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blanketUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-blanketUITests/Pods-blanketUITests.release.xcconfig"; sourceTree = "<group>"; };
 		56A43EBA072C91A887F9BD98 /* Pods_blanketTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_blanketTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DA81743A0C205749CE87BE8 /* Pods_blanketUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_blanketUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B26013B1E5D5B1E002818F4 /* blanket-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "blanket-Bridging-Header.h"; sourceTree = "<group>"; };
+		7B26013C1E5D5B1F002818F4 /* MessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageTableViewCell.h; sourceTree = "<group>"; };
+		7B26013D1E5D5B1F002818F4 /* MessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageTableViewCell.m; sourceTree = "<group>"; };
 		7BB69BFE1E5126DB0026CB72 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7BB69C001E5126F60026CB72 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		7BB69C021E5135790026CB72 /* LoginNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginNavController.swift; sourceTree = "<group>"; };
@@ -56,6 +61,7 @@
 		7BBD62171E5BDE59001CAF3C /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		7BC295241E5B6C7D00AA5F46 /* ClientLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientLoginViewController.swift; sourceTree = "<group>"; };
 		7BCC736A1E5BFF9600AC16B9 /* SharedUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedUser.swift; sourceTree = "<group>"; };
+		7BCC736E1E5C156F00AC16B9 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		7BD32EB81E51002A00A3AB91 /* blanket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = blanket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BD32EBB1E51002A00A3AB91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BD32EC01E51002A00A3AB91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -135,6 +141,7 @@
 		7BB69BF61E51229E0026CB72 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				7BCC736D1E5C154800AC16B9 /* Chat */,
 				7BB69BFB1E5124930026CB72 /* Extensions */,
 				7BB69BFA1E51248C0026CB72 /* Common */,
 				7BB69BF91E51245B0026CB72 /* Login */,
@@ -183,6 +190,17 @@
 			children = (
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		7BCC736D1E5C154800AC16B9 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				7B26013C1E5D5B1F002818F4 /* MessageTableViewCell.h */,
+				7B26013D1E5D5B1F002818F4 /* MessageTableViewCell.m */,
+				7BCC736E1E5C156F00AC16B9 /* ChatViewController.swift */,
+				7B26013B1E5D5B1E002818F4 /* blanket-Bridging-Header.h */,
+			);
+			name = Chat;
 			sourceTree = "<group>";
 		};
 		7BD32EAF1E51002900A3AB91 = {
@@ -317,6 +335,7 @@
 					7BD32EB71E51002A00A3AB91 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 9THX366ZCZ;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					7BD32ECB1E51002A00A3AB91 = {
@@ -524,12 +543,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BB69C051E5136260026CB72 /* VendorLoginViewController.swift in Sources */,
+				7B26013E1E5D5B1F002818F4 /* MessageTableViewCell.m in Sources */,
 				7BCC736B1E5BFF9600AC16B9 /* SharedUser.swift in Sources */,
 				7BC295251E5B6C7D00AA5F46 /* ClientLoginViewController.swift in Sources */,
 				7BB69BFF1E5126DB0026CB72 /* LoginViewController.swift in Sources */,
 				7BB69C031E5135790026CB72 /* LoginNavController.swift in Sources */,
 				7BBD62181E5BDE59001CAF3C /* TabBarController.swift in Sources */,
 				7BB69C011E5126F60026CB72 /* BaseViewController.swift in Sources */,
+				7BCC736F1E5C156F00AC16B9 /* ChatViewController.swift in Sources */,
 				7BD32EBC1E51002A00A3AB91 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -683,12 +704,15 @@
 			baseConfigurationReference = 124FFB52A8623BFACE8C3993 /* Pods-blanket.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 9THX366ZCZ;
 				INFOPLIST_FILE = blanket/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.procurify.blanket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "blanket/blanket-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -698,12 +722,14 @@
 			baseConfigurationReference = 0BF9FA32AC39AA649CE1D05F /* Pods-blanket.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 9THX366ZCZ;
 				INFOPLIST_FILE = blanket/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.procurify.blanket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "blanket/blanket-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
