@@ -10,6 +10,7 @@ import UIKit
 import SlackTextViewController
 import Starscream
 import AVFoundation
+import Kingfisher
 
 class ChatViewController: SLKTextViewController, WebSocketDelegate {
     
@@ -24,7 +25,7 @@ class ChatViewController: SLKTextViewController, WebSocketDelegate {
         
         let jwtToken = SharedUser.sharedUser.jwtToken
         
-        websocket = WebSocket(url: URL(string: "ws://192.168.1.66:8888/chat/?token=\(jwtToken)")!)
+        websocket = WebSocket(url: URL(string: "ws://blanket.localtunnel.me/chat/?token=\(jwtToken)")!)
         websocket.delegate = self
         websocket.connect()
     }
@@ -69,7 +70,8 @@ extension ChatViewController {
             "message": self.textView.text,
             "token": sharedUser.jwtToken,
             "sender": sharedUser.username,
-            "firstName": sharedUser.firstName
+            "firstName": sharedUser.firstName,
+            "profileImage": sharedUser.getUserPhotoImageUrl()
         ]
         
         do {
@@ -88,12 +90,7 @@ extension ChatViewController {
         let scrollPosition: UITableViewScrollPosition = self.isInverted ? .bottom : .top
         
         tableView?.beginUpdates()
-        let sender = SharedUser.sharedUser.username
-        let messageDict: [String: Any] = [
-            "sender": sender,
-            "message": self.textView.text
-        ]
-        self.messages.insert(messageDict, at: 0)
+        self.messages.insert(messageData, at: 0)
         tableView?.insertRows(at: [indexPath], with: rowAnimation)
         tableView?.endUpdates()
         
@@ -124,6 +121,8 @@ extension ChatViewController {
     
         cell.titleLabel.text = message["sender"] as? String
         cell.bodyLabel.text = message["message"] as? String
+        cell.thumbnailView.kf.setImage(with: URL(string: message["profileImage"] as! String)!)
+        print(message["profileImage"] as! String)
         
         cell.transform = tableView.transform
         

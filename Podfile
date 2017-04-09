@@ -12,7 +12,7 @@ target 'blanket' do
   pod 'KeychainSwift', '~> 7.0'
   pod 'SlackTextViewController'
   pod 'LoremIpsum', '~> 1.0'
-  pod 'HanekeSwift'
+  pod 'Kingfisher', '~> 3.0'
   
   target 'blanketTests' do
     inherit! :search_paths

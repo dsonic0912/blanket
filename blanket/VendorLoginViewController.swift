@@ -30,9 +30,10 @@ class VendorLoginViewController: UIViewController {
         let password = passwordTextField.text!
         
         let postData = ["username": username,
-                         "password": password]
+                         "password": password,
+                         "group": "vendor"]
         
-        let authResponse = Just.post("http://10.1.0.211:8888/api-token-auth/",
+        let authResponse = Just.post("https://blanket.localtunnel.me/api-token-auth/",
                                       data: postData)
         
         if authResponse.ok {

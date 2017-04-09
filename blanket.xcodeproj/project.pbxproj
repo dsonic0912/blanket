@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		553B188AD2C0143A5DE42257 /* Pods_blanket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38DB795985F18547C34B3F27 /* Pods_blanket.framework */; };
 		7B26013E1E5D5B1F002818F4 /* MessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B26013D1E5D5B1F002818F4 /* MessageTableViewCell.m */; };
+		7B814FE91E975CDA00FAD247 /* VendorPortalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B814FE81E975CDA00FAD247 /* VendorPortalViewController.swift */; };
 		7BB69BFF1E5126DB0026CB72 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB69BFE1E5126DB0026CB72 /* LoginViewController.swift */; };
 		7BB69C011E5126F60026CB72 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB69C001E5126F60026CB72 /* BaseViewController.swift */; };
 		7BB69C031E5135790026CB72 /* LoginNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB69C021E5135790026CB72 /* LoginNavController.swift */; };
@@ -54,6 +55,8 @@
 		7B26013B1E5D5B1E002818F4 /* blanket-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "blanket-Bridging-Header.h"; sourceTree = "<group>"; };
 		7B26013C1E5D5B1F002818F4 /* MessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageTableViewCell.h; sourceTree = "<group>"; };
 		7B26013D1E5D5B1F002818F4 /* MessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageTableViewCell.m; sourceTree = "<group>"; };
+		7B814FE81E975CDA00FAD247 /* VendorPortalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VendorPortalViewController.swift; sourceTree = "<group>"; };
+		7B814FEA1E975D3500FAD247 /* blanket.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = blanket.entitlements; sourceTree = "<group>"; };
 		7BB69BFE1E5126DB0026CB72 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7BB69C001E5126F60026CB72 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		7BB69C021E5135790026CB72 /* LoginNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginNavController.swift; sourceTree = "<group>"; };
@@ -130,6 +133,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7B814FE71E975C8900FAD247 /* VendorPortal */ = {
+			isa = PBXGroup;
+			children = (
+				7B814FE81E975CDA00FAD247 /* VendorPortalViewController.swift */,
+			);
+			name = VendorPortal;
+			sourceTree = "<group>";
+		};
 		7BB69BF51E5122910026CB72 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +152,7 @@
 		7BB69BF61E51229E0026CB72 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				7B814FE71E975C8900FAD247 /* VendorPortal */,
 				7BCC736D1E5C154800AC16B9 /* Chat */,
 				7BB69BFB1E5124930026CB72 /* Extensions */,
 				7BB69BFA1E51248C0026CB72 /* Common */,
@@ -228,6 +240,7 @@
 		7BD32EBA1E51002A00A3AB91 /* blanket */ = {
 			isa = PBXGroup;
 			children = (
+				7B814FEA1E975D3500FAD247 /* blanket.entitlements */,
 				7BB69BF71E5122AA0026CB72 /* Assets */,
 				7BB69BF61E51229E0026CB72 /* Application */,
 				7BB69BF51E5122910026CB72 /* Models */,
@@ -337,6 +350,11 @@
 						DevelopmentTeam = 9THX366ZCZ;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					7BD32ECB1E51002A00A3AB91 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -552,6 +570,7 @@
 				7BB69C011E5126F60026CB72 /* BaseViewController.swift in Sources */,
 				7BCC736F1E5C156F00AC16B9 /* ChatViewController.swift in Sources */,
 				7BD32EBC1E51002A00A3AB91 /* AppDelegate.swift in Sources */,
+				7B814FE91E975CDA00FAD247 /* VendorPortalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -705,6 +724,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = blanket/blanket.entitlements;
 				DEVELOPMENT_TEAM = 9THX366ZCZ;
 				INFOPLIST_FILE = blanket/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -723,6 +743,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = blanket/blanket.entitlements;
 				DEVELOPMENT_TEAM = 9THX366ZCZ;
 				INFOPLIST_FILE = blanket/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

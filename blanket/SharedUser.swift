@@ -58,4 +58,8 @@ class SharedUser {
         let keychain = KeychainSwift()
         keychain.set(keyData, forKey: "auth")
     }
+    
+    func getUserPhotoImageUrl() -> String {
+        return "https://commondatastorage.googleapis.com/cdn.procurify.com/\(self.profileImage)"
+    }
 }

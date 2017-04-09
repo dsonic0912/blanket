@@ -9,7 +9,13 @@
 import UIKit
 import Just
 
+protocol ClientLoginDelegate {
+    func clientDidLogin()
+}
+
 class ClientLoginViewController: UIViewController {
+    
+    var clientLoginDelegate: ClientLoginDelegate! = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()

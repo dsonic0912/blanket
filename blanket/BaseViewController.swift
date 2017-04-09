@@ -22,6 +22,7 @@ class BaseViewController: UIViewController, VendorLoginDelegate {
         cleanUpViews()
         
         let keychain = KeychainSwift()
+        keychain.delete("auth")
         
         if let _ = keychain.getData("auth") {
             swapToTabBarView()
